@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@theme {
+  --color-verde-cancha: #2D6A2F;
+  --color-verde-claro: #3A8C3D;
+  --color-verde-pasto: #4CAF50;
+  --color-blanco-linea: #FFFFFF;
+  --color-amarillo-estrella: #F5C518;
+  --color-naranja-accion: #FF6B35;
+  --color-gris-oscuro: #1A1A1A;
+  --color-gris-card: #2C2C2C;
+
+  --font-sans: "Barlow Condensed", sans-serif;
+  --font-title: "Oswald", sans-serif;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    background-color: var(--color-gris-oscuro);
+    color: var(--color-blanco-linea);
+  }
+  
+  h1, h2, h3, h4, .title-font {
+    font-family: var(--font-title);
+  }
+}
+
+/* Custom fade up transition similar to fadeInUp */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Base custom styles to hide scrollbars while allowing swipe */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}

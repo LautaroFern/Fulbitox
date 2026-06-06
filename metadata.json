@@ -1,0 +1,6 @@
+{
+  "name": "Fútbol 7 Team Maker",
+  "description": "Una aplicación web mobile-first para armar y balancear equipos de fútbol 7 de forma visual e intuitiva.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
